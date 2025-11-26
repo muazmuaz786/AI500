@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UzAirSense · AI500 Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <header class="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="logo" class="logo-orb"><span class="logo-text">UzAirSense</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero" data-i18n="nav_home"></a>
+      <a href="#problem" data-i18n="nav_problem"></a>
+      <a href="#solution" data-i18n="nav_solution"></a>
+      <a href="#team" data-i18n="nav_team"></a>
+      <a href="#roadmap" data-i18n="nav_roadmap"></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button data-lang="en">EN</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="uz">UZ</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="section hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="pill" data-i18n="hero_tag"></div>
+          <h1 data-i18n="hero_title"></h1>
+          <p class="hero-sub" data-i18n="hero_sub"></p>
+          <div class="hero-actions">
+            <a href="#solution" class="btn primary" data-i18n="hero_btn_primary"></a>
+            <a href="#problem" class="btn ghost" data-i18n="hero_btn_secondary"></a>
+          </div>
+          <p class="hero-note" data-i18n="hero_note"></p>
+        </div>
+        <div class="hero-card card glass">
+          <h2 data-i18n="hero_card_title"></h2>
+          <ul class="checklist">
+            <li data-i18n="hero_card_1"></li>
+            <li data-i18n="hero_card_2"></li>
+            <li data-i18n="hero_card_3"></li>
+            <li data-i18n="hero_card_4"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="problem" class="section block">
+      <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="problem_tag"></p>
+          <h2 data-i18n="problem_title"></h2>
+          <p class="sec-sub" data-i18n="problem_sub"></p>
+        </header>
+        <div class="grid two">
+          <article class="card glass">
+            <h3 data-i18n="problem_col1_title"></h3>
+            <p data-i18n="problem_col1_p1"></p>
+            <p data-i18n="problem_col1_p2"></p>
+          </article>
+          <article class="card glass">
+            <h3 data-i18n="problem_col2_title"></h3>
+            <ul class="bullets">
+              <li data-i18n="problem_l1"></li>
+              <li data-i18n="problem_l2"></li>
+              <li data-i18n="problem_l3"></li>
+              <li data-i18n="problem_l4"></li>
+            </ul>
+            <p class="muted" data-i18n="problem_note"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="solution" class="section block">
+      <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="solution_tag"></p>
+          <h2 data-i18n="solution_title"></h2>
+          <p class="sec-sub" data-i18n="solution_sub"></p>
+        </header>
+        <div class="grid three">
+          <article class="card glass">
+            <h3 data-i18n="solution_box1_title"></h3>
+            <p data-i18n="solution_box1_p"></p>
+          </article>
+          <article class="card glass">
+            <h3 data-i18n="solution_box2_title"></h3>
+            <p data-i18n="solution_box2_p"></p>
+          </article>
+          <article class="card glass">
+            <h3 data-i18n="solution_box3_title"></h3>
+            <p data-i18n="solution_box3_p"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="section block">
+      <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="team_tag"></p>
+          <h2 data-i18n="team_title"></h2>
+          <p class="sec-sub" data-i18n="team_sub"></p>
+        </header>
+        <div class="grid two team-grid">
+          <article class="card glass team-card">
+            <h3 data-i18n="team_m1_name"></h3>
+            <p class="role" data-i18n="team_m1_role"></p>
+            <p data-i18n="team_m1_p"></p>
+          </article>
+          <article class="card glass team-card">
+            <h3 data-i18n="team_m2_name"></h3>
+            <p class="role" data-i18n="team_m2_role"></p>
+            <p data-i18n="team_m2_p"></p>
+          </article>
+          <article class="card glass team-card">
+            <h3 data-i18n="team_m3_name"></h3>
+            <p class="role" data-i18n="team_m3_role"></p>
+            <p data-i18n="team_m3_p"></p>
+          </article>
+          <article class="card glass team-card">
+            <h3 data-i18n="team_m4_name"></h3>
+            <p class="role" data-i18n="team_m4_role"></p>
+            <p data-i18n="team_m4_p"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="roadmap" class="section block">
+      <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="roadmap_tag"></p>
+          <h2 data-i18n="roadmap_title"></h2>
+          <p class="sec-sub" data-i18n="roadmap_sub"></p>
+        </header>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-marker"></div>
+            <div class="t-content card glass">
+              <h3 data-i18n="roadmap_s1_title"></h3>
+              <p data-i18n="roadmap_s1_p"></p>
+            </div>
+          </div>
+          <div class="t-item current">
+            <div class="t-marker"></div>
+            <div class="t-content card glass">
+              <h3 data-i18n="roadmap_s2_title"></h3>
+              <p data-i18n="roadmap_s2_p"></p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-marker"></div>
+            <div class="t-content card glass">
+              <h3 data-i18n="roadmap_s3_title"></h3>
+              <p data-i18n="roadmap_s3_p"></p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-marker"></div>
+            <div class="t-content card glass">
+              <h3 data-i18n="roadmap_s4_title"></h3>
+              <p data-i18n="roadmap_s4_p"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section id="how" class="section block">
+      <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="how_tag"></p>
+          <h2 data-i18n="how_title"></h2>
+          <p class="sec-sub" data-i18n="how_sub"></p>
+        </header>
+        <div class="grid two">
+          <article class="card glass">
+            <h3 data-i18n="how_col1_title"></h3>
+            <ul class="steps">
+              <li data-i18n="how_l1"></li>
+              <li data-i18n="how_l2"></li>
+              <li data-i18n="how_l3"></li>
+              <li data-i18n="how_l4"></li>
+            </ul>
+          </article>
+          <article class="card glass">
+            <h3 data-i18n="how_col2_title"></h3>
+            <div class="multi-text" data-i18n="how_col2_p"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="tech" class="section block">
+        <div class="section-inner">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="tech_tag"></p>
+          <h2 data-i18n="tech_title"></h2>
+          <p class="sec-sub" data-i18n="tech_sub"></p>
+        </header>
+
+        <div class="grid three tech-grid">
+          <article class="card glass tech-card">
+            <h3 data-i18n="tech_box1_title"></h3>
+            <p data-i18n="tech_box1_p1"></p>
+            <p data-i18n="tech_box1_p2"></p>
+          </article>
+
+          <article class="card glass tech-card">
+            <h3 data-i18n="tech_box2_title"></h3>
+            <p data-i18n="tech_box2_p1"></p>
+            <p data-i18n="tech_box2_p2"></p>
+          </article>
+
+          <article class="card glass tech-card">
+            <h3 data-i18n="tech_box3_title"></h3>
+            <p data-i18n="tech_box3_p1"></p>
+            <p data-i18n="tech_box3_p2"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="prototype" class="section block final">
+      <div class="section-inner center">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="try_tag"></p>
+          <h2 data-i18n="try_title"></h2>
+          <p class="sec-sub" data-i18n="try_sub"></p>
+        </header>
+        <button class="btn primary disabled" disabled data-i18n="try_btn"></button>
+        <p class="muted small" data-i18n="try_note"></p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer"><p data-i18n="footer_text"></p></footer>
+  <script src="javascript.js"></script>
+</body>
+</html>

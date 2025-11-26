@@ -1,0 +1,718 @@
+/* ==== RESET & BASE ==== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #020617;
+  --bg-alt: #02041a;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56,189,248,0.18);
+  --accent-strong: #22c55e;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --card-bg: rgba(15,23,42,0.9);
+  --card-border: rgba(148,163,184,0.6);
+  --nav-bg: rgba(2,6,23,0.9);
+  --radius-xl: 26px;
+  --radius-md: 16px;
+  --shadow-soft: 0 25px 60px rgba(15,23,42,0.95);
+  --shadow-glow: 0 0 45px rgba(56,189,248,0.55);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0f172a 0, #020617 40%, #000 100%);
+  color: var(--text-main);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ==== BACKGROUND CANVAS ==== */
+
+#bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+
+/* ==== NAVBAR ==== */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: linear-gradient(to bottom, rgba(2,6,23,0.95), rgba(2,6,23,0.85), transparent);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(15,23,42,0.9);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-orb {
+  width: 32px;
+  height: 35px;
+}
+
+.logo-text {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background .18s ease, color .18s ease;
+}
+
+.nav-links a:hover {
+  color: #f9fafb;
+  background: rgba(15,23,42,0.9);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Language pills */
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(15,23,42,0.95);
+  border: 1px solid rgba(51,65,85,0.8);
+}
+
+.lang-switch button {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+
+.lang-switch button.active {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: #020617;
+}
+
+/* ==== SECTIONS GENERAL ==== */
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 90px 16px;
+  scroll-margin-top: 120px;
+}
+
+#team, #roadmap, #solution, #problem {
+  scroll-margin-top: 90px;
+}
+
+
+.section.block {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.final {
+  padding-bottom: 160px;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1120px;
+}
+
+/* Hero layout */
+
+.hero {
+  padding-top: 130px;
+  padding-bottom: 110px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  font-size: clamp(38px, 4.8vw, 60px);
+  line-height: 1.02;
+  margin-bottom: 16px;
+}
+
+.hero-sub {
+  font-size: 19px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+
+.hero-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.9);
+  background: rgba(15,23,42,0.9);
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border .15s ease, color .15s;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: #020617;
+  box-shadow: 0 20px 55px rgba(56,189,248,0.5);
+}
+
+.btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 25px 70px rgba(56,189,248,0.7);
+}
+
+.btn.ghost {
+  background: rgba(15,23,42,0.95);
+  border-color: rgba(148,163,184,0.8);
+  color: var(--text-muted);
+}
+
+.btn.ghost:hover {
+  border-color: #e5e7eb;
+  color: #e5e7eb;
+}
+
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+  box-shadow: none;
+}
+
+/* Cards */
+
+.card {
+  border-radius: var(--radius-xl);
+  padding: 26px 26px 24px;
+  border: 1px solid var(--card-border);
+  background: radial-gradient(circle at top left, rgba(56,189,248,0.22), transparent 55%), radial-gradient(circle at bottom right, rgba(34,197,94,0.16), transparent 55%), var(--card-bg);
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-card {
+  max-width: 430px;
+  justify-self: end;
+}
+
+.hero-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Checklists & bullets */
+
+.checklist,
+.bullets,
+.steps {
+  list-style: none;
+}
+
+.checklist li,
+.bullets li,
+.steps li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-strong);
+}
+
+.bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+.steps li::before {
+  content: "⟡";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a855f7;
+}
+
+/* Section headers */
+
+.sec-head {
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.sec-head h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.sec-head .sec-sub {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 700px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.grid.two {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px; 
+  margin-top: 30px;
+}
+
+.team-card {
+  padding: 22px 26px; 
+  border-radius: 16px; 
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 22px rgba(0,0,0,0.28);
+
+  min-height: auto;
+}
+
+.team-card h3 {
+  font-size: 22px;
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+.team-card .role {
+  font-size: 15px;
+  color: #4ade80;
+  margin-bottom: 14px;
+}
+
+.team-card p {
+  font-size: 17px; 
+  line-height: 1.55; 
+  color: #d4d4d8;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  margin-top: 18px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(148,163,184,0.6), transparent);
+}
+
+.t-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.t-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(148,163,184,0.9);
+  background: radial-gradient(circle at 30% 30%, #e0f2fe, #38bdf8);
+  box-shadow: 0 0 18px rgba(56,189,248,0.8);
+  margin-top: 10px;
+}
+
+.t-item.current .t-marker {
+  border-color: #22c55e;
+  box-shadow: 0 0 22px rgba(34,197,94,0.9);
+}
+
+.t-content {
+  flex: 1;
+  padding: 18px 20px;
+}
+
+/* Misc text */
+
+p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.small {
+  font-size: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px 16px 40px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: linear-gradient(to top, rgba(2,6,23,0.98), transparent);
+}
+
+/* Scroll reveal delays */
+
+.card:nth-of-type(1) { transition-delay: .05s; }
+.card:nth-of-type(2) { transition-delay: .1s; }
+.card:nth-of-type(3) { transition-delay: .15s; }
+.card:nth-of-type(4) { transition-delay: .2s; }
+
+/* Responsive */
+
+@media (max-width: 960px) {
+  .nav {
+    padding-inline: 16px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-card {
+    justify-self: stretch;
+  }
+  .grid.two {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .grid.three {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-inline: 14px;
+  }
+  .card {
+    border-radius: 18px;
+    padding: 20px 18px 18px;
+  }
+  .hero {
+    padding-top: 110px;
+  }
+}
+
+/* ===== Anchor offset: Team/Roadmap/How/Tech 안 보이는 문제 해결 ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+#problem,
+#solution,
+#team,
+#roadmap,
+#how,
+#tech,
+#prototype {
+  scroll-margin-top: 40px; /* 네비 높이에 맞춰서 필요하면 숫자 조정 */
+}
+
+/* ===== Team grid: 2x2 + compact 카드 ===== */
+.team-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.team-card {
+  padding: 22px 26px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.28);
+  min-height: auto;
+}
+
+.team-card h3 {
+  font-size: 22px;
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+.team-card .role {
+  font-size: 15px;
+  color: #4ade80;
+  margin-bottom: 14px;
+}
+
+.team-card p {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #d4d4d8;
+}
+
+/* ===== Tech section cards ===== */
+.tech-grid {
+  margin-top: 32px;
+  gap: 32px;
+}
+
+.tech-card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+/* Mobile stack */
+@media (max-width: 900px) {
+  .team-grid,
+  .tech-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.multi-text {
+  white-space: pre-line;   /* 줄바꿈 유지 */
+  line-height: 1.55;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* ------------------------------------------
+   FIX: Approach 카드 두 개의 스타일 완전 통일
+-------------------------------------------*/
+
+/* 공통 카드 글자 스타일 */
+#how .card,
+#approach .card,
+#tech .card,
+.section .card {
+  color: #e9edf5;
+}
+
+#how .card h3,
+#approach .card h3,
+#tech .card h3,
+.section .card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+#how .card p,
+#approach .card p,
+#approach .card div,
+#tech .card p,
+.section .card p {
+  font-size: 16px;
+  color: #e9edf5;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+/* 리스트 스타일 */
+#how .card ul li,
+#approach .card ul li,
+#tech .card ul li,
+.section .card ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #e9edf5;
+  margin-bottom: 10px;
+}
+
+/* 리스트 아이콘 통일 */
+#how .card ul li::before,
+#approach .card ul li::before,
+#tech .card ul li::before,
+.section .card ul li::before {
+  content: "◆";
+  font-size: 9px;
+  color: #8fd4ff;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+/* 카드 내부 마진 통일 */
+#how .card,
+#approach .card,
+#tech .card,
+.section .card {
+  padding: 25px 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+
+/* ------------------------------------------
+   FIX: Roadmap cards smaller & compact
+-------------------------------------------*/
+#roadmap .t-content {
+  padding: 18px 22px !important;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+/* Title in roadmap */
+#roadmap .t-content h3 {
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+/* Description */
+#roadmap .t-content p {
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Layout spacing between items */
+#roadmap .t-item {
+  margin-bottom: 16px;
+}
