@@ -15,10 +15,10 @@ const i18n = {
     hero_sub: "UzAirSense turns invisible air pollution data into clear, simple guidance so families, students and people at risk can plan their day safely.",
     hero_btn_primary: "See our solution",
     hero_btn_secondary: "Why this problem",
-    hero_note: "Stage 1 demo: we focus on a clear problem, realistic solution and roadmap. The full product comes in next stages.",
+    hero_note: "Stage 1 (Nov 2025): static demo with crystal-clear problem, solution and roadmap.",
     hero_card_title: "What UzAirSense will do",
     hero_card_1: "Show real-time AQI for major Uzbek cities in a friendly interface.",
-    hero_card_2: "Use AI models to predict pollution peaks and clean windows.",
+    hero_card_2: "Use AI models to predict pollution peaks and best times to open windows.",
     hero_card_3: "Explain risks in normal language, not only numbers and charts.",
     hero_card_4: "Notify sensitive users when air quality crosses safe thresholds.",
     problem_tag: "Problem",
@@ -63,7 +63,7 @@ const i18n = {
     roadmap_s1_title: "Idea & research",
     roadmap_s1_p: "Validate the scale of the problem, map existing AQI sources and talk to students, parents and doctors about what information they actually need.",
     roadmap_s2_title: "Prototype",
-    roadmap_s2_p: "Design this galaxy-style demo, finalise the information architecture, choose APIs and define our first simple forecasting baseline.",
+    roadmap_s2_p: "finalise the information architecture, choose APIs and define our first simple forecasting baseline.",
     roadmap_s3_title: "MVP",
     roadmap_s3_p: "Implement data collection, AQI dashboard for several cities, and basic AI-driven suggestions such as “mask recommended after 19:00.” Deploy on the web.",
     roadmap_s4_title: "Launched",
@@ -73,7 +73,7 @@ const i18n = {
     how_sub: "We start with a clear demo for AI500, then connect real APIs, Groq and FastAPI into one working product.",
 
     how_col1_title: "From demo to real product",
-    how_l1: "Stage 1 (now): static demo with realistic copy, design and clear UX for the main use cases.",
+    how_l1: "Stage 1: static demo with realistic copy, design and clear UX for the main use cases.",
     how_l2: "Stage 2: connect live air-quality API to a FastAPI backend and display real AQI for Tashkent and key cities.",
     how_l3: "Stage 3: integrate Groq to turn raw AQI values into daily, human-readable guidance in three languages.",
     how_l4: "Stage 4: add 3D charts on Three.js, basic alerts and city comparison, then deploy a public beta.",
@@ -112,14 +112,14 @@ const i18n = {
     comp_row3_col2: "No AQI data, no pollution alerts",
     comp_row3_col3: "AQI + weather combined into one dashboard",
 
-    competitive_edge: "Our edge: built for Uzbekistan, by Uzbekistanis.",
+    competitive_edge: "Our edge: built for Uzbekistan, by Uzbek.",
 
 
     try_tag: "Stage 1",
-    try_title: "Prototype button coming in the next phase.",
-    try_sub: "For this round, our focus is clarity of problem, solution, team and roadmap. The live AQI dashboard prototype will be connected here if we pass to the next stage.",
-    try_btn: "Prototype – coming soon",
-    try_note: "No login, no paywall – just a clear public dashboard for Uzbekistan.",
+    try_title: "Early Working Prototype — You Can Try It Now (Development Version)",
+    try_sub: "an early development build. It demonstrates the core functionality we are currently building.",
+    try_btn: "Prototype",
+    try_note: "completely free, public dashboard",
     footer_text: "UzAirSense · AI500 Stage 1 demo · Agrobank & IT Community of Uzbekistan",
     tech_tag: "TECH · AI · BACKEND",
     tech_title: "Our technical stack: from live APIs to 3D air insights.",
@@ -134,7 +134,7 @@ const i18n = {
     tech_box2_p2: "The backend defines safe prompts, max lengths and guardrails so that messages stay focused on health, safety and daily decisions for users in Uzbekistan.",
 
     tech_box3_title: "Three.js 3D visuals on top of the API",
-    tech_box3_p1: "On the client side, we use Three.js to turn time-series data into animated 3D charts and subtle ‘smoke’ effects that visually show peaks in pollution.",
+    tech_box3_p1: "On the client side, we use Three.js to turn time-series data into animated 3D charts.",
     tech_box3_p2: "The goal is to let people not only read numbers, but actually see how air quality changes during the day on a lightweight, mobile-friendly WebGL experience.",
 
   },
@@ -142,6 +142,7 @@ const i18n = {
     nav_home: "Главная",
     nav_problem: "Проблема",
     nav_solution: "Решение",
+    nav_competitive: "Преимущество",
     nav_team: "Команда",
     nav_roadmap: "План",
     hero_tag: "AI500 · Экология · ИИ",
@@ -149,7 +150,7 @@ const i18n = {
     hero_sub: "UzAirSense переводит сложные данные о загрязнении воздуха в понятные советы, чтобы семьи, студенты и люди из группы риска могли безопасно планировать свой день.",
     hero_btn_primary: "Наше решение",
     hero_btn_secondary: "В чём проблема",
-    hero_note: "На этом этапе мы показываем идею, команду и реальный план. Сам сервис будет запущен на следующих этапах AI500.",
+    hero_note: "Этап 1 (ноябрь 2025): статичный демо-сайт с чётко представленными проблемой, решением и дорожной картой.",
     hero_card_title: "Что будет делать UzAirSense",
     hero_card_1: "Показывать текущее качество воздуха по городам Узбекистана.",
     hero_card_2: "Прогнозировать пики загрязнения и более чистые часы.",
@@ -207,7 +208,7 @@ const i18n = {
     how_sub: "Сначала мы делаем понятный демо для AI500, затем подключаем реальные API, Groq и FastAPI в один рабочий продукт.",
 
     how_col1_title: "От демо к реальному сервису",
-    how_l1: "Этап 1 (сейчас): статичный демо-сайт с реалистичным текстом, дизайном и основными сценариями использования.",
+    how_l1: "Этап 1: статичный демо-сайт с реалистичным текстом, дизайном и основными сценариями использования.",
     how_l2: "Этап 2: подключить живой API качества воздуха к бэкенду на FastAPI и показывать реальный AQI для Ташкента и ключевых городов.",
     how_l3: "Этап 3: интегрировать Groq, чтобы превращать сырые значения AQI в ежедневные рекомендации на трёх языках.",
     how_l4: "Этап 4: добавить 3D-графики на Three.js, базовые уведомления и сравнение городов, затем выкатить публичную бету.",
@@ -252,10 +253,10 @@ const i18n = {
 
 
     try_tag: "Этап 1",
-    try_title: "Прототип откроется на следующем этапе.",
-    try_sub: "Сейчас важнее всего чётко показать проблему, решение и реалистичный план.",
+    try_title: "Работающий Ранний Прототип — Можно Протестировать Прямо Сейчас (Версия в Разработке)",
+    try_sub: "Это ранняя версия в разработке: стиль ещё не готов, подключено только несколько API.",
     try_btn: "Прототип — скоро",
-    try_note: "Публичная панель без входа и оплаты.",
+    try_note: "Бесплатная публичная панель",
     footer_text: "UzAirSense · демо 1-го этапа AI500 · Agrobank и IT Community of Uzbekistan",
     tech_tag: "ТЕХНОЛОГИИ · ИИ · БЭКЕНД",
     tech_title: "Наш стек: от live-API до 3D-визуализации воздуха.",
@@ -270,7 +271,7 @@ const i18n = {
     tech_box2_p2: "Бэкенд задаёт промпты, ограничения по длине и простые правила безопасности, чтобы сообщения были сфокусированы на здоровье, безопасности и ежедневных решениях пользователей.",
 
     tech_box3_title: "Three.js и 3D-визуализации на фронтенде",
-    tech_box3_p1: "На клиенте мы используем Three.js, чтобы превращать временные ряды в анимированные 3D-графики и лёгкие «дымовые» эффекты, показывающие пики загрязнения.",
+    tech_box3_p1: "На клиенте мы используем Three.js, чтобы превращать временные ряды.",
     tech_box3_p2: "Так пользователь не просто читает цифры, а *видит*, как качество воздуха меняется в течение дня, даже с мобильного устройства.",
 
 
@@ -279,6 +280,7 @@ const i18n = {
     nav_home: "Bosh sahifa",
     nav_problem: "Muammo",
     nav_solution: "Yechim",
+    nav_competitive: "Ustunlik",
     nav_team: "Jamoa",
     nav_roadmap: "Yo‘l xaritasi",
     hero_tag: "AI500 · Ekologiya · AI",
@@ -286,7 +288,7 @@ const i18n = {
     hero_sub: "UzAirSense ko‘rinmas havo ifloslanishi ma’lumotlarini oddiy, tushunarli tavsiyalarga aylantiradi. Oilalar, talabalar va xavf guruhlari kunini xavfsiz rejalashi mumkin.",
     hero_btn_primary: "Yechimimiz",
     hero_btn_secondary: "Muammo haqida",
-    hero_note: "1-bosqichda biz g‘oya, muammo va rejamizni aniq ko‘rsatamiz. Tirik servis keyingi bosqichlarda ulanadi.",
+    hero_note: "1-bosqich (2025-yil noyabr): muammo, yechim va yo‘l xaritasi aniq ko‘rsatilgan statik demo.",
     hero_card_title: "UzAirSense nimalar qiladi",
     hero_card_1: "O‘zbekiston shaharlari uchun hozirgi AQI ni ko‘rsatadi.",
     hero_card_2: "AI yordamida ifloslanish cho‘qqilari va toza soatlarni bashorat qiladi.",
@@ -344,7 +346,7 @@ const i18n = {
     how_sub: "Avval AI500 uchun tushunarli demo, keyin esa haqiqiy API, Groq va FastAPI’ni bir tizimga ulaymiz.",
 
     how_col1_title: "Demo’dan real mahsulotgacha",
-    how_l1: "1-bosqich (hozir): asosiy ishlash senariylari uchun realistik matn va dizaynga ega statik demo-sayt.",
+    how_l1: "1-bosqich and subtle ‘smoke’ effects that visually show peaks in pollution: asosiy ishlash senariylari uchun realistik matn va dizaynga ega statik demo-sayt.",
     how_l2: "2-bosqich: havo sifati bo‘yicha live API’ni FastAPI backend’iga ulash va Toshkent hamda asosiy shaharlarda real AQI ko‘rsatish.",
     how_l3: "3-bosqich: Groq integratsiyasi orqali AQI sonlarini har kuni uch tilda oddiy tushunarli tavsiyalarga aylantirish.",
     how_l4: "4-bosqich: Three.js asosida 3D grafikalar, sodda ogohlantirishlar va shaharlarni solishtirish funksiyasini qo‘shish, so‘ngra public beta reliz qilish.",
@@ -388,10 +390,9 @@ const i18n = {
 
 
     try_tag: "1-bosqich",
-    try_title: "Prototip tugmasi keyingi bosqichda ishlaydi.",
-    try_sub: "Hozir biz uchun muammo, yechim va rejamizni aniq ko‘rsatish eng muhim.",
-    try_btn: "Prototip — tez orada",
-    try_note: "Hamma uchun ochiq, bepul va login talab qilmaydigan panel bo‘ladi.",
+    try_title: "Ishlaydigan Dastlabki Prototip — Hozir Sinab Ko‘rishingiz Mumkin (Dasturiy Versiya)",
+    try_sub: "Bu hali rivojlanish jarayonidagi versiya — dizayni tugallanmagan va faqat bir nechta API ulangan.",
+    try_note: "Butunlay bepul, hammaga ochiq panel",
     footer_text: "UzAirSense · AI500 1-bosqich demo · Agrobank va IT Community of Uzbekistan",
     tech_tag: "TEXNOLOGIYA · AI · BACKEND",
     tech_title: "Bizning texnik stack: live API’dan 3D vizualgacha.",
@@ -406,7 +407,7 @@ const i18n = {
     tech_box2_p2: "Backend xavfsiz promptlar, matn uzunligi chegaralari va sodda qoidalar orqali xabarlar O‘zbekistondagi foydalanuvchilar uchun sog‘liq, xavfsizlik va kundalik qarorlarga qaratilgan bo‘lishini ta’minlaydi.",
 
     tech_box3_title: "Three.js – 3D grafikalar va vizual qatlam",
-    tech_box3_p1: "Frontend tomonda Three.js yordamida vaqt bo‘yicha ifloslanish ma’lumotlarini animatsiyali 3D grafikalar va mayin “tutun” effektlariga aylantiramiz.",
+    tech_box3_p1: "Frontend tomonda Three.js yordamida vaqt bo‘yicha ifloslanish ma’lumotlarini animatsiyali 3D grafikalar.",
     tech_box3_p2: "Maqsad – foydalanuvchi faqat raqamlarni emas, balki kun davomida havo sifati qanday o‘zgarayotganini ko‘rishi, va bularning barchasi yengil, mobil uchun qulay WebGL tajribasi orqali.",
 
   }
