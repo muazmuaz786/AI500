@@ -716,3 +716,38 @@ html {
 #roadmap .t-item {
   margin-bottom: 16px;
 }
+
+.competitive-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.competitive-table .col {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.competitive-table h3 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.competitive-table ul li {
+  list-style: none;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.competitive-edge {
+  margin-top: 24px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+}
