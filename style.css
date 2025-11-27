@@ -751,3 +751,50 @@ html {
   text-align: center;
   color: #fff;
 }
+
+
+
+/* 기본 GitHub 버튼 스타일 */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 4px;
+  transition: 0.25s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 아이콘 */
+.github-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
+  transition: 0.25s ease;
+}
+
+/* Hover 효과 */
+.github-link:hover {
+  border-color: #ffffff;
+  transform: translateY(-8px) scale(1.1); /* 점프 + 확대 */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
+}
+
+.github-link:hover .github-icon {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* 둥둥 떠다니는 아이들 애니메이션 */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
