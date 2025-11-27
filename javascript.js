@@ -7,6 +7,7 @@ const i18n = {
     nav_home: "Home",
     nav_problem: "Problem",
     nav_solution: "Solution",
+    nav_competitive: "Competitive",
     nav_team: "Team",
     nav_roadmap: "Roadmap",
     hero_tag: "AI500 · Ecology · AI for Good",
@@ -87,6 +88,31 @@ const i18n = {
     ✔ Clear AI pipeline: raw AQI → FastAPI → Groq → human-readable guidance  
 
     Our goal is not to build everything at once, but to ship a focused, working version quickly and improve it each week.`,
+
+    competitive_tag: "Competitive edge",
+    competitive_title: "What makes UzAirSense different",
+    competitive_sub: "Clear advantages compared to global apps, government dashboards and weather tools.",
+
+    comp_col1_title: "Other solutions",
+    comp_col2_title: "The gap",
+    comp_col3_title: "UzAirSense",
+
+    // Row 1
+    comp_row1_col1: "Global apps (AirVisual, etc.)",
+    comp_row1_col2: "English-only, no local context, no guidance",
+    comp_row1_col3: "Uzbek, Russian, English — built for Uzbek cities",
+
+    // Row 2
+    comp_row2_col1: "Government portals",
+    comp_row2_col2: "Too technical, only charts and numbers",
+    comp_row2_col3: "Plain-language AI explanations with actions",
+
+    // Row 3
+    comp_row3_col1: "Weather apps",
+    comp_row3_col2: "No AQI data, no pollution alerts",
+    comp_row3_col3: "AQI + weather combined into one dashboard",
+
+    competitive_edge: "Our edge: built for Uzbekistan, by Uzbekistanis.",
 
 
     try_tag: "Stage 1",
@@ -198,6 +224,32 @@ const i18n = {
     Наша цель — не строить всё сразу, а быстро выпустить работающий фундамент и улучшать его каждую неделю.`,
 
 
+    competitive_tag: "Преимущество",
+    competitive_title: "Чем UzAirSense отличается от других",
+    competitive_sub: "Понятные преимущества по сравнению с мировыми приложениями, гос-панелями и погодными сервисами.",
+
+    comp_col1_title: "Другие решения",
+    comp_col2_title: "Пробел",
+    comp_col3_title: "UzAirSense",
+
+    // Row 1
+    comp_row1_col1: "Глобальные приложения (AirVisual и др.)",
+    comp_row1_col2: "Только английский, нет локального контекста, нет подсказок",
+    comp_row1_col3: "Узбекский, русский, английский — адаптация под Узбекистан",
+
+    // Row 2
+    comp_row2_col1: "Гос-порталы",
+    comp_row2_col2: "Слишком технически, только графики и цифры",
+    comp_row2_col3: "AI объясняет простым языком и даёт советы",
+
+    // Row 3
+    comp_row3_col1: "Погодные приложения",
+    comp_row3_col2: "Нет AQI, нет предупреждений о загрязнении",
+    comp_row3_col3: "AQI + погода в одной удобной панели",
+
+    competitive_edge: "Наше преимущество: создано для Узбекистана и людьми Узбекистана.",
+
+
 
     try_tag: "Этап 1",
     try_title: "Прототип откроется на следующем этапе.",
@@ -307,6 +359,32 @@ const i18n = {
     ✔ AI pipeline aniq: xom AQI → FastAPI → Groq → oddiy, tushunarli tavsiyalar  
 
     Maqsad — hammasini birdaniga qurish emas, avval ishlaydigan versiyani tez chiqarish va uni har hafta yaxshilab borish.`,
+
+    competitive_tag: "Ustunligimiz",
+    competitive_title: "UzAirSense nimasi bilan boshqalardan ustun",
+    competitive_sub: "Global ilovalar, davlat panellari va ob-havo servislariga nisbatan aniq afzalliklar.",
+
+    comp_col1_title: "Boshqa yechimlar",
+    comp_col2_title: "Bo‘shliq",
+    comp_col3_title: "UzAirSense",
+
+    // Row 1
+    comp_row1_col1: "Global ilovalar (AirVisual va boshqalar)",
+    comp_row1_col2: "Faqat inglizcha, mahalliy kontekst yo‘q, tavsiya bermaydi",
+    comp_row1_col3: "O‘zbek, rus, ingliz — O‘zbekiston shaharlariga moslangan",
+
+    // Row 2
+    comp_row2_col1: "Davlat portallari",
+    comp_row2_col2: "Haddan tashqari texnik, faqat grafik va raqamlar",
+    comp_row2_col3: "AI oddiy tilda izoh va aniq tavsiyalar beradi",
+
+    // Row 3
+    comp_row3_col1: "Ob-havo ilovalari",
+    comp_row3_col2: "AQI yo‘q, ifloslanish ogohlantirishlari yo‘q",
+    comp_row3_col3: "AQI + ob-havo bitta panelda birlashtirilgan",
+
+    competitive_edge: "Bizning ustunlik: O‘zbekiston uchun, o‘zbekistonliklar tomonidan yaratilgan.",
+
 
 
     try_tag: "1-bosqich",
