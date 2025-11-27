@@ -1,7 +1,3 @@
-/* =========================
-   MULTI-LANGUAGE CONTENT
-   ========================= */
-
 const i18n = {
   en: {
     nav_home: "Home",
@@ -71,13 +67,11 @@ const i18n = {
     how_tag: "APPROACH",
     how_title: "How we plan to build UzAirSense step by step.",
     how_sub: "We start with a clear demo for AI500, then connect real APIs, Groq and FastAPI into one working product.",
-
     how_col1_title: "From demo to real product",
     how_l1: "Stage 1: static demo with realistic copy, design and clear UX for the main use cases.",
     how_l2: "Stage 2: connect live air-quality API to a FastAPI backend and display real AQI for Tashkent and key cities.",
     how_l3: "Stage 3: integrate Groq to turn raw AQI values into daily, human-readable guidance in three languages.",
     how_l4: "Stage 4: add 3D charts on Three.js, basic alerts and city comparison, then deploy a public beta.",
-
     how_col2_title: "Why this approach is realistic",
     how_col2_p: 
     `We already work with the exact tools we plan to use — FastAPI, Groq, Three.js and live AQ APIs. 
@@ -92,29 +86,19 @@ const i18n = {
     competitive_tag: "Competitive edge",
     competitive_title: "What makes UzAirSense different",
     competitive_sub: "Clear advantages compared to global apps, government dashboards and weather tools.",
-
     comp_col1_title: "Other solutions",
     comp_col2_title: "The gap",
     comp_col3_title: "UzAirSense",
-
-    // Row 1
     comp_row1_col1: "Global apps (AirVisual, etc.)",
     comp_row1_col2: "English-only, no local context, no guidance",
     comp_row1_col3: "Uzbek, Russian, English — built for Uzbek cities",
-
-    // Row 2
     comp_row2_col1: "Government portals",
     comp_row2_col2: "Too technical, only charts and numbers",
     comp_row2_col3: "Plain-language AI explanations with actions",
-
-    // Row 3
     comp_row3_col1: "Weather apps",
     comp_row3_col2: "No AQI data, no pollution alerts",
     comp_row3_col3: "AQI + weather combined into one dashboard",
-
     competitive_edge: "Our edge: built for Uzbekistan, by Uzbek.",
-
-
     try_tag: "Stage 1",
     try_title: "Early Working Prototype — You Can Try It Now (Development Version)",
     try_sub: "an early development build. It demonstrates the core functionality we are currently building.",
@@ -124,15 +108,12 @@ const i18n = {
     tech_tag: "TECH · AI · BACKEND",
     tech_title: "Our technical stack: from live APIs to 3D air insights.",
     tech_sub: "UzAirSense is built around a FastAPI backend that connects live air-quality APIs, Groq LLMs and a Three.js frontend into one coherent system.",
-
     tech_box1_title: "FastAPI backend as the core hub",
     tech_box1_p1: "FastAPI acts as the backend layer that talks to external air-quality and weather APIs, validates responses and normalises fields like PM2.5, PM10, AQI, temperature and wind.",
     tech_box1_p2: "The backend exposes a clean JSON API for the frontend, handles basic caching, rate limiting and prepares data for Groq and 3D charts.",
-
     tech_box2_title: "Groq LLM for smart text and reasoning",
     tech_box2_p1: "Instead of showing only raw AQI numbers, we send aggregated data to a Groq LLM (e.g. Llama-3 / Mixtral) to generate short, clear explanations in English, Russian and Uzbek.",
     tech_box2_p2: "The backend defines safe prompts, max lengths and guardrails so that messages stay focused on health, safety and daily decisions for users in Uzbekistan.",
-
     tech_box3_title: "Three.js 3D visuals on top of the API",
     tech_box3_p1: "On the client side, we use Three.js to turn time-series data into animated 3D charts.",
     tech_box3_p2: "The goal is to let people not only read numbers, but actually see how air quality changes during the day on a lightweight, mobile-friendly WebGL experience.",
@@ -206,13 +187,11 @@ const i18n = {
     how_tag: "ПОДХОД",
     how_title: "Пошаговый план разработки UzAirSense.",
     how_sub: "Сначала мы делаем понятный демо для AI500, затем подключаем реальные API, Groq и FastAPI в один рабочий продукт.",
-
     how_col1_title: "От демо к реальному сервису",
     how_l1: "Этап 1: статичный демо-сайт с реалистичным текстом, дизайном и основными сценариями использования.",
     how_l2: "Этап 2: подключить живой API качества воздуха к бэкенду на FastAPI и показывать реальный AQI для Ташкента и ключевых городов.",
     how_l3: "Этап 3: интегрировать Groq, чтобы превращать сырые значения AQI в ежедневные рекомендации на трёх языках.",
     how_l4: "Этап 4: добавить 3D-графики на Three.js, базовые уведомления и сравнение городов, затем выкатить публичную бету.",
-
     how_col2_title: "Почему этот подход реалистичен",
     how_col2_p:
     `Мы уже работаем с теми инструментами, которые войдут в финальный продукт — FastAPI, Groq, Three.js и live AQ API.
@@ -223,35 +202,22 @@ const i18n = {
     ✔ Чёткий AI-конвейер: сырые данные → FastAPI → Groq → понятные рекомендации  
 
     Наша цель — не строить всё сразу, а быстро выпустить работающий фундамент и улучшать его каждую неделю.`,
-
-
     competitive_tag: "Преимущество",
     competitive_title: "Чем UzAirSense отличается от других",
     competitive_sub: "Понятные преимущества по сравнению с мировыми приложениями, гос-панелями и погодными сервисами.",
-
     comp_col1_title: "Другие решения",
     comp_col2_title: "Пробел",
     comp_col3_title: "UzAirSense",
-
-    // Row 1
     comp_row1_col1: "Глобальные приложения (AirVisual и др.)",
     comp_row1_col2: "Только английский, нет локального контекста, нет подсказок",
     comp_row1_col3: "Узбекский, русский, английский — адаптация под Узбекистан",
-
-    // Row 2
     comp_row2_col1: "Гос-порталы",
     comp_row2_col2: "Слишком технически, только графики и цифры",
     comp_row2_col3: "AI объясняет простым языком и даёт советы",
-
-    // Row 3
     comp_row3_col1: "Погодные приложения",
     comp_row3_col2: "Нет AQI, нет предупреждений о загрязнении",
     comp_row3_col3: "AQI + погода в одной удобной панели",
-
     competitive_edge: "Наше преимущество: создано для Узбекистана и людьми Узбекистана.",
-
-
-
     try_tag: "Этап 1",
     try_title: "Работающий Ранний Прототип — Можно Протестировать Прямо Сейчас (Версия в Разработке)",
     try_sub: "Это ранняя версия в разработке: стиль ещё не готов, подключено только несколько API.",
@@ -261,20 +227,15 @@ const i18n = {
     tech_tag: "ТЕХНОЛОГИИ · ИИ · БЭКЕНД",
     tech_title: "Наш стек: от live-API до 3D-визуализации воздуха.",
     tech_sub: "В основе UzAirSense — бэкенд на FastAPI, который соединяет API качества воздуха, Groq-LLM и фронтенд на Three.js в одну систему.",
-
     tech_box1_title: "FastAPI как центральный бэкенд-узел",
     tech_box1_p1: "FastAPI выступает бэкенд-слоем, который обращается к внешним API качества воздуха и погоды, проверяет ответы и нормализует PM2.5, PM10, AQI, температуру и ветер.",
     tech_box1_p2: "Бэкенд предоставляет фронтенду чистый JSON-эндпоинт, выполняет простое кэширование, ограничение запросов и готовит данные для Groq и 3D-графиков.",
-
     tech_box2_title: "Groq LLM для текста и логики",
     tech_box2_p1: "Вместо того чтобы показывать только сухие числа, мы отправляем агрегированные данные в Groq-LLM (Llama-3 / Mixtral), чтобы получать короткие и понятные объяснения на английском, русском и узбекском.",
     tech_box2_p2: "Бэкенд задаёт промпты, ограничения по длине и простые правила безопасности, чтобы сообщения были сфокусированы на здоровье, безопасности и ежедневных решениях пользователей.",
-
     tech_box3_title: "Three.js и 3D-визуализации на фронтенде",
     tech_box3_p1: "На клиенте мы используем Three.js, чтобы превращать временные ряды.",
     tech_box3_p2: "Так пользователь не просто читает цифры, а *видит*, как качество воздуха меняется в течение дня, даже с мобильного устройства.",
-
-
   },
   uz: {
     nav_home: "Bosh sahifa",
@@ -344,13 +305,11 @@ const i18n = {
     how_tag: "YONDASHUV",
     how_title: "UzAirSense’ni bosqichma-bosqich qanday qurmoqchimiz.",
     how_sub: "Avval AI500 uchun tushunarli demo, keyin esa haqiqiy API, Groq va FastAPI’ni bir tizimga ulaymiz.",
-
     how_col1_title: "Demo’dan real mahsulotgacha",
     how_l1: "1-bosqich and subtle ‘smoke’ effects that visually show peaks in pollution: asosiy ishlash senariylari uchun realistik matn va dizaynga ega statik demo-sayt.",
     how_l2: "2-bosqich: havo sifati bo‘yicha live API’ni FastAPI backend’iga ulash va Toshkent hamda asosiy shaharlarda real AQI ko‘rsatish.",
     how_l3: "3-bosqich: Groq integratsiyasi orqali AQI sonlarini har kuni uch tilda oddiy tushunarli tavsiyalarga aylantirish.",
     how_l4: "4-bosqich: Three.js asosida 3D grafikalar, sodda ogohlantirishlar va shaharlarni solishtirish funksiyasini qo‘shish, so‘ngra public beta reliz qilish.",
-
     how_col2_title: "Nega bu yondashuv haqiqatda ishlaydi",
     how_col2_p:
     `Biz ishlatmoqchi bo‘lgan vositalar — FastAPI, Groq, Three.js va live AQ API’lar — allaqachon qo‘limizda.
@@ -361,34 +320,22 @@ const i18n = {
     ✔ AI pipeline aniq: xom AQI → FastAPI → Groq → oddiy, tushunarli tavsiyalar  
 
     Maqsad — hammasini birdaniga qurish emas, avval ishlaydigan versiyani tez chiqarish va uni har hafta yaxshilab borish.`,
-
     competitive_tag: "Ustunligimiz",
     competitive_title: "UzAirSense nimasi bilan boshqalardan ustun",
     competitive_sub: "Global ilovalar, davlat panellari va ob-havo servislariga nisbatan aniq afzalliklar.",
-
     comp_col1_title: "Boshqa yechimlar",
     comp_col2_title: "Bo‘shliq",
     comp_col3_title: "UzAirSense",
-
-    // Row 1
     comp_row1_col1: "Global ilovalar (AirVisual va boshqalar)",
     comp_row1_col2: "Faqat inglizcha, mahalliy kontekst yo‘q, tavsiya bermaydi",
     comp_row1_col3: "O‘zbek, rus, ingliz — O‘zbekiston shaharlariga moslangan",
-
-    // Row 2
     comp_row2_col1: "Davlat portallari",
     comp_row2_col2: "Haddan tashqari texnik, faqat grafik va raqamlar",
     comp_row2_col3: "AI oddiy tilda izoh va aniq tavsiyalar beradi",
-
-    // Row 3
     comp_row3_col1: "Ob-havo ilovalari",
     comp_row3_col2: "AQI yo‘q, ifloslanish ogohlantirishlari yo‘q",
     comp_row3_col3: "AQI + ob-havo bitta panelda birlashtirilgan",
-
     competitive_edge: "Bizning ustunlik: O‘zbekiston uchun, o‘zbekistonliklar tomonidan yaratilgan.",
-
-
-
     try_tag: "1-bosqich",
     try_title: "Ishlaydigan Dastlabki Prototip — Hozir Sinab Ko‘rishingiz Mumkin (Dasturiy Versiya)",
     try_sub: "Bu hali rivojlanish jarayonidagi versiya — dizayni tugallanmagan va faqat bir nechta API ulangan.",
@@ -397,15 +344,12 @@ const i18n = {
     tech_tag: "TEXNOLOGIYA · AI · BACKEND",
     tech_title: "Bizning texnik stack: live API’dan 3D vizualgacha.",
     tech_sub: "UzAirSense markazida FastAPI backend turadi: u havo sifati API’lari, Groq LLM va Three.js frontendini bitta yaxlit tizimga bog‘laydi.",
-
     tech_box1_title: "FastAPI – markaziy backend qatlami",
     tech_box1_p1: "FastAPI tashqi havo sifati va ob-havo API’lari bilan gaplashadi, javoblarni tekshiradi va PM2.5, PM10, AQI, harorat va shamol kabi qiymatlarni bir xil formatga keltiradi.",
     tech_box1_p2: "Backend frontend uchun toza JSON API beradi, oddiy kesh, so‘rovlar cheklovi va Groq hamda 3D grafikalar uchun tayyorlangan ma’lumotlarni boshqaradi.",
-
     tech_box2_title: "Groq LLM – aqlli matn va izohlar",
     tech_box2_p1: "Faqat sonlarni ko‘rsatish o‘rniga, biz yig‘ilgan ma’lumotlarni Groq LLM’ga (Llama-3 / Mixtral) yuboramiz va ingliz, rus va o‘zbek tillarida qisqa, tushunarli tavsiyalar olamiz.",
     tech_box2_p2: "Backend xavfsiz promptlar, matn uzunligi chegaralari va sodda qoidalar orqali xabarlar O‘zbekistondagi foydalanuvchilar uchun sog‘liq, xavfsizlik va kundalik qarorlarga qaratilgan bo‘lishini ta’minlaydi.",
-
     tech_box3_title: "Three.js – 3D grafikalar va vizual qatlam",
     tech_box3_p1: "Frontend tomonda Three.js yordamida vaqt bo‘yicha ifloslanish ma’lumotlarini animatsiyali 3D grafikalar.",
     tech_box3_p2: "Maqsad – foydalanuvchi faqat raqamlarni emas, balki kun davomida havo sifati qanday o‘zgarayotganini ko‘rishi, va bularning barchasi yengil, mobil uchun qulay WebGL tajribasi orqali.",
@@ -431,9 +375,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* =========================
-   SCROLL REVEAL
-   ========================= */
 
 const observer = new IntersectionObserver(
   entries => {
@@ -446,9 +387,6 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".card").forEach(card => observer.observe(card));
 
-/* =========================
-   THREE.JS GALAXY BACKGROUND
-   ========================= */
 
 const bgCanvas = document.getElementById("bg");
 const renderer = new THREE.WebGLRenderer({ canvas: bgCanvas, antialias: true });
@@ -466,7 +404,6 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.set(0, 0, 80);
 
-/* Starfield */
 
 const starCount = 2600;
 const starGeometry = new THREE.BufferGeometry();
@@ -508,8 +445,6 @@ const starMaterial = new THREE.PointsMaterial({
 const stars = new THREE.Points(starGeometry, starMaterial);
 scene.add(stars);
 
-/* Nebula planes */
-
 const nebulaGroup = new THREE.Group();
 scene.add(nebulaGroup);
 
@@ -536,8 +471,6 @@ makeNebula(30, 55, 30, 0x3b82f6, 6);
 makeNebula(18, 32, 18, 0x22c55e, -4);
 makeNebula(40, 70, 40, 0xa855f7, -12);
 
-/* Subtle “galactic haze” behind hero */
-
 const hazeGeo = new THREE.PlaneGeometry(80, 40);
 const hazeMat = new THREE.MeshBasicMaterial({
   color: 0x1d4ed8,
@@ -549,8 +482,6 @@ const hazeMat = new THREE.MeshBasicMaterial({
 const haze = new THREE.Mesh(hazeGeo, hazeMat);
 haze.position.set(0, 0, -20);
 scene.add(haze);
-
-/* Animation */
 
 let lastTime = 0;
 function animateGalaxy(time) {
@@ -576,8 +507,6 @@ function animateGalaxy(time) {
   renderer.render(scene, camera);
 }
 animateGalaxy(0);
-
-/* Resize */
 
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
