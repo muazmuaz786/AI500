@@ -1,4 +1,4 @@
-/* ==== RESET & BASE ==== */
+
 *,
 *::before,
 *::after {
@@ -36,7 +36,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ==== BACKGROUND CANVAS ==== */
 
 #bg {
   position: fixed;
@@ -47,7 +46,6 @@ body {
   z-index: -1;
 }
 
-/* ==== NAVBAR ==== */
 
 .nav {
   position: sticky;
@@ -104,8 +102,6 @@ body {
   gap: 12px;
 }
 
-/* Language pills */
-
 .lang-switch {
   display: flex;
   gap: 8px;
@@ -134,7 +130,7 @@ body {
   color: #020617;
 }
 
-/* ==== SECTIONS GENERAL ==== */
+
 
 .section {
   width: 100%;
@@ -162,8 +158,6 @@ body {
   width: 100%;
   max-width: 1120px;
 }
-
-/* Hero layout */
 
 .hero {
   padding-top: 130px;
@@ -217,7 +211,6 @@ body {
   gap: 10px;
 }
 
-/* Buttons */
 
 .btn {
   display: inline-flex;
@@ -262,7 +255,6 @@ body {
   box-shadow: none;
 }
 
-/* Cards */
 
 .card {
   border-radius: var(--radius-xl);
@@ -290,7 +282,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Checklists & bullets */
 
 .checklist,
 .bullets,
@@ -332,7 +323,6 @@ body {
   color: #a855f7;
 }
 
-/* Section headers */
 
 .sec-head {
   text-align: left;
@@ -358,7 +348,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* Grids */
 
 .grid {
   display: grid;
@@ -417,7 +406,6 @@ body {
 
 
 
-/* Timeline */
 
 .timeline {
   position: relative;
@@ -460,7 +448,6 @@ body {
   padding: 18px 20px;
 }
 
-/* Misc text */
 
 p {
   font-size: 15px;
@@ -479,7 +466,6 @@ p {
   text-align: center;
 }
 
-/* Footer */
 
 .footer {
   padding: 20px 16px 40px;
@@ -489,14 +475,12 @@ p {
   background: linear-gradient(to top, rgba(2,6,23,0.98), transparent);
 }
 
-/* Scroll reveal delays */
 
 .card:nth-of-type(1) { transition-delay: .05s; }
 .card:nth-of-type(2) { transition-delay: .1s; }
 .card:nth-of-type(3) { transition-delay: .15s; }
 .card:nth-of-type(4) { transition-delay: .2s; }
 
-/* Responsive */
 
 @media (max-width: 960px) {
   .nav {
@@ -532,7 +516,6 @@ p {
   }
 }
 
-/* ===== Anchor offset: Team/Roadmap/How/Tech 안 보이는 문제 해결 ===== */
 html {
   scroll-behavior: smooth;
 }
@@ -544,10 +527,9 @@ html {
 #how,
 #tech,
 #prototype {
-  scroll-margin-top: 40px; /* 네비 높이에 맞춰서 필요하면 숫자 조정 */
+  scroll-margin-top: 40px; 
 }
 
-/* ===== Team grid: 2x2 + compact 카드 ===== */
 .team-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
@@ -583,7 +565,6 @@ html {
   color: #d4d4d8;
 }
 
-/* ===== Tech section cards ===== */
 .tech-grid {
   margin-top: 32px;
   gap: 32px;
@@ -600,7 +581,6 @@ html {
   color: #e5e7eb;
 }
 
-/* Mobile stack */
 @media (max-width: 900px) {
   .team-grid,
   .tech-grid {
@@ -609,7 +589,7 @@ html {
 }
 
 .multi-text {
-  white-space: pre-line;   /* 줄바꿈 유지 */
+  white-space: pre-line;   
   line-height: 1.55;
   font-size: 1rem;
 }
@@ -618,11 +598,7 @@ html {
 
 
 
-/* ------------------------------------------
-   FIX: Approach 카드 두 개의 스타일 완전 통일
--------------------------------------------*/
 
-/* 공통 카드 글자 스타일 */
 #how .card,
 #approach .card,
 #tech .card,
@@ -651,7 +627,6 @@ html {
   margin-bottom: 12px;
 }
 
-/* 리스트 스타일 */
 #how .card ul li,
 #approach .card ul li,
 #tech .card ul li,
@@ -664,7 +639,6 @@ html {
   margin-bottom: 10px;
 }
 
-/* 리스트 아이콘 통일 */
 #how .card ul li::before,
 #approach .card ul li::before,
 #tech .card ul li::before,
@@ -677,7 +651,6 @@ html {
   top: 4px;
 }
 
-/* 카드 내부 마진 통일 */
 #how .card,
 #approach .card,
 #tech .card,
@@ -689,9 +662,6 @@ html {
 }
 
 
-/* ------------------------------------------
-   FIX: Roadmap cards smaller & compact
--------------------------------------------*/
 #roadmap .t-content {
   padding: 18px 22px !important;
   border-radius: 16px;
@@ -699,20 +669,16 @@ html {
   backdrop-filter: blur(10px);
 }
 
-/* Title in roadmap */
 #roadmap .t-content h3 {
   font-size: 19px;
   margin-bottom: 6px;
 }
 
-/* Description */
 #roadmap .t-content p {
   font-size: 15px;
   line-height: 1.45;
   margin: 0;
 }
-
-/* Layout spacing between items */
 #roadmap .t-item {
   margin-bottom: 16px;
 }
@@ -752,9 +718,6 @@ html {
   color: #fff;
 }
 
-
-
-/* 기본 GitHub 버튼 스타일 */
 .github-link {
   display: inline-flex;
   align-items: center;
@@ -765,8 +728,6 @@ html {
   transition: 0.25s ease;
   animation: float 3s ease-in-out infinite;
 }
-
-/* 아이콘 */
 .github-icon {
   width: 20px;
   height: 20px;
@@ -774,10 +735,9 @@ html {
   transition: 0.25s ease;
 }
 
-/* Hover 효과 */
 .github-link:hover {
   border-color: #ffffff;
-  transform: translateY(-8px) scale(1.1); /* 점프 + 확대 */
+  transform: translateY(-8px) scale(1.1);
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
 }
 
@@ -785,8 +745,6 @@ html {
   opacity: 1;
   transform: scale(1.2);
 }
-
-/* 둥둥 떠다니는 아이들 애니메이션 */
 @keyframes float {
   0% {
     transform: translateY(0px);
