@@ -98,7 +98,7 @@ const i18n = {
     comp_row3_col1: "Weather apps",
     comp_row3_col2: "No AQI data, no pollution alerts",
     comp_row3_col3: "AQI + weather combined into one dashboard",
-    competitive_edge: "Our edge: built for Uzbekistan, by Uzbek.",
+    competitive_edge: "Our edge: built for Uzbekistan, by Uzbeks.",
     try_tag: "Stage 1",
     try_title: "Early Working Prototype — You Can Try It Now (Development Version)",
     try_sub: "an early development build. It demonstrates the core functionality we are currently building.",
@@ -163,7 +163,7 @@ const i18n = {
     team_sub: "У нас есть практический опыт разработки, интерес к ИИ и мы сами живём в этом воздухе.",
     team_m1_name: "Муаз Тиллаев",
     team_m1_role: "Лидер · Бэкенд, Фронтенд и ИИ",
-    team_m1_p: "Проектирует и реализует всю систему — бэкенд, фронтенд и начальные AI-модули. Создаёт API, продумывает структуру данных, интегрирует 3D-визуализацию на Three.js и обеспечивает стабильную работу прототипа",
+    team_m1_p: "Проектирует и реализует всю систему — бэкенд, фронтенд и начальные ИИ-модули. Создаёт API, продумывает структуру данных, интегрирует 3D-визуализацию на Three.js и обеспечивает стабильную работу прототипа",
     team_m2_name: "Мухаммадюсуф Нуриддинов",
     team_m2_role: "Дизайн и текст · UX",
     team_m2_p: "Отвечает за визуальную идентичность проекта, формирует пользовательский опыт и пишет понятный и доступный контент. Разрабатывает структуру интерфейса, визуальные секции, читабельность и делает продукт интуитивно понятным для пользователей",
@@ -181,7 +181,7 @@ const i18n = {
     roadmap_s2_title: "Прототип",
     roadmap_s2_p: "Этот демо-сайт, структура данных и выбор API, первый простой базовый прогноз.",
     roadmap_s3_title: "MVP",
-    roadmap_s3_p: "Сбор данных, панель AQI для нескольких городов, простые AI-подсказки. Деплой в веб.",
+    roadmap_s3_p: "Сбор данных, панель AQI для нескольких городов, простые ИИ-подсказки. Деплой в веб.",
     roadmap_s4_title: "Запуск",
     roadmap_s4_p: "Оповещения, расширение покрытия, партнёрства и улучшение моделей.",
     how_tag: "ПОДХОД",
@@ -199,7 +199,7 @@ const i18n = {
 
     ✔ Минимальная сложность бэкенда: FastAPI берет на себя всю агрегацию данных  
     ✔ Масштабируемость: легко добавить новые города или датчики в будущем  
-    ✔ Чёткий AI-конвейер: сырые данные → FastAPI → Groq → понятные рекомендации  
+    ✔ Чёткий ИИ-конвейер: сырые данные → FastAPI → Groq → понятные рекомендации  
 
     Наша цель — не строить всё сразу, а быстро выпустить работающий фундамент и улучшать его каждую неделю.`,
     competitive_tag: "Преимущество",
@@ -213,15 +213,15 @@ const i18n = {
     comp_row1_col3: "Узбекский, русский, английский — адаптация под Узбекистан",
     comp_row2_col1: "Гос-порталы",
     comp_row2_col2: "Слишком технически, только графики и цифры",
-    comp_row2_col3: "AI объясняет простым языком и даёт советы",
+    comp_row2_col3: "ИИ объясняет простым языком и даёт советы",
     comp_row3_col1: "Погодные приложения",
     comp_row3_col2: "Нет AQI, нет предупреждений о загрязнении",
     comp_row3_col3: "AQI + погода в одной удобной панели",
     competitive_edge: "Наше преимущество: создано для Узбекистана и людьми Узбекистана.",
     try_tag: "Этап 1",
     try_title: "Работающий Ранний Прототип — Можно Протестировать Прямо Сейчас (Версия в Разработке)",
-    try_sub: "Это ранняя версия в разработке: стиль ещё не готов, подключено только несколько API.",
-    try_btn: "Прототип — скоро",
+    try_sub: "Это ранняя версия разработки. Она демонстрирует основную функциональность, которую мы сейчас создаём.",
+    try_btn: "Прототип",
     try_note: "Бесплатная публичная панель",
     footer_text: "UzAirSense · демо 1-го этапа AI500 · Agrobank и IT Community of Uzbekistan",
     tech_tag: "ТЕХНОЛОГИИ · ИИ · БЭКЕНД",
@@ -306,7 +306,7 @@ const i18n = {
     how_title: "UzAirSense’ni bosqichma-bosqich qanday qurmoqchimiz.",
     how_sub: "Avval AI500 uchun tushunarli demo, keyin esa haqiqiy API, Groq va FastAPI’ni bir tizimga ulaymiz.",
     how_col1_title: "Demo’dan real mahsulotgacha",
-    how_l1: "1-bosqich and subtle ‘smoke’ effects that visually show peaks in pollution: asosiy ishlash senariylari uchun realistik matn va dizaynga ega statik demo-sayt.",
+    how_l1: "1-bosqich asosiy foydalanish holatlari uchun realistik matn, dizayn va aniq UX bilan statik demo.",
     how_l2: "2-bosqich: havo sifati bo‘yicha live API’ni FastAPI backend’iga ulash va Toshkent hamda asosiy shaharlarda real AQI ko‘rsatish.",
     how_l3: "3-bosqich: Groq integratsiyasi orqali AQI sonlarini har kuni uch tilda oddiy tushunarli tavsiyalarga aylantirish.",
     how_l4: "4-bosqich: Three.js asosida 3D grafikalar, sodda ogohlantirishlar va shaharlarni solishtirish funksiyasini qo‘shish, so‘ngra public beta reliz qilish.",
@@ -338,8 +338,9 @@ const i18n = {
     competitive_edge: "Bizning ustunlik: O‘zbekiston uchun, o‘zbekistonliklar tomonidan yaratilgan.",
     try_tag: "1-bosqich",
     try_title: "Ishlaydigan Dastlabki Prototip — Hozir Sinab Ko‘rishingiz Mumkin (Dasturiy Versiya)",
-    try_sub: "Bu hali rivojlanish jarayonidagi versiya — dizayni tugallanmagan va faqat bir nechta API ulangan.",
+    try_sub: "Bu dastlabki rivojlantirish qurilmasi. U hozirda yaratib borayotgan asosiy funksionalligimizni namoyish etadi.",
     try_note: "Butunlay bepul, hammaga ochiq panel",
+    try_btn: "prototip",
     footer_text: "UzAirSense · AI500 1-bosqich demo · Agrobank va IT Community of Uzbekistan",
     tech_tag: "TEXNOLOGIYA · AI · BACKEND",
     tech_title: "Bizning texnik stack: live API’dan 3D vizualgacha.",
@@ -395,7 +396,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x020617, 0.012);
-
+  
 const camera = new THREE.PerspectiveCamera(
   55,
   window.innerWidth / window.innerHeight,
@@ -512,4 +513,20 @@ window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+const header = document.querySelector('.nav');
+const headerHeight = header.offsetHeight;
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.getAttribute('href');
+    const target = document.querySelector(id);
+
+    window.scrollTo({
+      top: target.offsetTop - headerHeight - 20,
+      behavior: 'smooth'
+    });
+  });
 });
