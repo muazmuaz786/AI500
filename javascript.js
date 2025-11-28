@@ -517,16 +517,3 @@ window.addEventListener("resize", () => {
 
 const header = document.querySelector('.nav');
 const headerHeight = header.offsetHeight;
-
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const id = link.getAttribute('href');
-    const target = document.querySelector(id);
-
-    window.scrollTo({
-      top: target.offsetTop - headerHeight - 20,
-      behavior: 'smooth'
-    });
-  });
-});
