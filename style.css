@@ -143,11 +143,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 90px 16px;
-  scroll-margin-top: 120px;
-}
-
-#team, #roadmap, #solution, #problem {
-  scroll-margin-top: 90px;
 }
 
 
