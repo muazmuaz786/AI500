@@ -82,7 +82,7 @@ const i18n = {
     ✔ Clear AI pipeline: raw AQI → FastAPI → Groq → human-readable guidance  
 
     The only negative thing is that our budgets are limited for a real sensors but the solution is Model-based AQI estimation.
-    But it may not be accurate as real sensors. ±20%`,
+    But it may not be accurate as real sensors. ±20% accuracy`,
 
     competitive_tag: "Competitive edge",
     competitive_title: "What makes UzAirSense different",
@@ -203,7 +203,7 @@ const i18n = {
     ✔ Чёткий ИИ-конвейер: сырые данные → FastAPI → Groq → понятные рекомендации  
 
     Единственный недостаток — наш бюджет ограничен для установки реальных датчиков, поэтому решение — модельное вычисление AQI.
-    Однако такая оценка может быть не такой точной, как данные с реальных сенсоров. ±20%`,
+    Однако такая оценка может быть не такой точной, как данные с реальных сенсоров. ±20% точность`,
     competitive_tag: "Преимущество",
     competitive_title: "Чем UzAirSense отличается от других",
     competitive_sub: "Понятные преимущества по сравнению с мировыми приложениями, гос-панелями и погодными сервисами.",
@@ -322,7 +322,7 @@ const i18n = {
     ✔ AI pipeline aniq: xom AQI → FastAPI → Groq → oddiy, tushunarli tavsiyalar  
 
     Yagona kamchilik shundaki, bizning budjetimiz haqiqiy sensorlar uchun cheklangan, ammo yechim — Modelga asoslangan AQI hisoblash.
-    Lekin bu haqiqiy sensorlar kabi aniq bo‘lmasligi mumkin. ±20%`,
+    Lekin bu haqiqiy sensorlar kabi aniq bo‘lmasligi mumkin. ±20% aniqlik`,
     competitive_tag: "Ustunligimiz",
     competitive_title: "UzAirSense nimasi bilan boshqalardan ustun",
     competitive_sub: "Global ilovalar, davlat panellari va ob-havo servislariga nisbatan aniq afzalliklar.",
